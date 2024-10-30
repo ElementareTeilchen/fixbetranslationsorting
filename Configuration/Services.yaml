@@ -1,0 +1,10 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  ElementareTeilchen\Fixbetranslationsorting\Backend\EventListener\ModifyDatabaseQueryForContentEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'fixbetranslationsorting/backend/modify-database-query-for-content'
